@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Natural ways to improve your families health and life!">
+		<meta name="keywords" content="Essential,Natural,Oils,Herbs,Family">
+		<meta name="author" content="Saundra Konrad">
+		<style>
+			body {
+				background-color: #d9d9d9;
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>

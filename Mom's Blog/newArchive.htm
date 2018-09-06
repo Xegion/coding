@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+	<html lang="en-US">
+		<head>
+			<title>E & E | Archive</title>
+			<style>
+				div.arthead {
+					text-align: left;
+					color: #331400;
+					margin-left: 30px;
+				}
+				div.date {
+					color: lightgrey;
+					font-size: 12px;
+					text-align: left;
+					margin-left: 30px;
+				}
+				div.artbody {
+					border: 1px solid black;
+					background-color: 411d0b;
+					display: box;
+					background-color: white;
+					text-align: center;
+					margin-bottom: 40px;
+					margin-left: 300px;
+					margin-right: 300px;
+					box-shadow: 5px 5px 5px #006480;
+				}
+				div.arttxt {
+					margin-left: 30px;
+					color: #331400;
+					margin-right: 30px;
+					font-weight: bold;
+				}
+				.dropbtn {
+					background-color: white;
+					display: block;
+					box-shadow: 5px 5px 5px grey;
+					margin: 10px;
+					color: #331400;
+					font-weight: bold;
+					border: 1px solid #555;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					cursor: pointer;
+				}
+
+				.dropbtn:hover, .dropbtn:focus {
+					background-color: #006480;
+				}
+
+				.dropdown {
+					position: relative;
+					display: inline-block;
+				}
+
+				.dropdown-content {
+					display: none;
+					position: absolute;
+					background-color: #f9f9f9;
+					min-width: 160px;
+					overflow: auto;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				}
+
+				.dropdown-content a {
+					color: #331400;
+					font-weight: bold;
+					padding: 12px 16px;
+					text-decoration: none;
+					display: block;
+				}
+
+				.dropdown a:hover {background-color: #006480}
+
+				.show {display:block;}
+				#background {
+					width: 100%; 
+					height: 100%; 
+					position: fixed; 
+					left: 0px; 
+					top: 0px; 
+					z-index: -1;
+				}
+
+				.stretch {
+					width:100%;
+					height:100%;
+				}
+				img {
+					margin: auto;
+					display: block;
+				}
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: white;
+					border-bottom: 1px solid #555;
+					border-top: 1px solid #555;
+					margin-bottom: 20px;
+				}
+				li {
+					float: left;
+				}
+				li a {
+					display: block;
+					box-shadow: 5px 5px 5px grey;
+					margin: 10px;
+					color: #331400;
+					font-weight: bold;
+					border: 1px solid #555;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				li a:hover {
+					background-color: #006480; 
+				}
+				div.arcbody {
+					border: 1px solid black;
+					color: #331400;
+					background-color: white;
+					display: box;
+					text-align: center;
+					margin-bottom: 40px;
+					margin-left: 600px;
+					margin-right: 600px;
+					padding-bottom: 20px;
+					box-shadow: 5px 5px 5px #006480;
+				}
+				body {
+					background-color: #ccffff;
+				}
+			</style>
+		<head>
+		<body style="font-family:Arial;margin: 0px;">
+			<div id="background">
+				<img src="Floral Background.gif" class="stretch" alt="" />
+			</div>
+			<div class="header">
+				<img src="Header.png" style="width:300px;height:120px;" align="middle">
+			</div>
+			<ul>
+				<li><a href="Index.htm">Home</a></li>
+				<li><a href="#">Archive</a></li>
+				<li><a href="News.htm">News</a></li>
+				<li><a href="Contact.htm">Contact</a></li>
+				<li style="float:right;"><a href="About.htm">About</a></li>
+				<li style="float:right;"><a href="Subscribe.htm">Subscribe</a></li>
+			</ul>
+			<div class="arcbody">
+			<h2>2016</h2>
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">September</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Title</a>
+					<a href="#">Title</a>
+					<a href="#">Title</a>
+				</div>
+				</div>
+			</div>
+			<script>
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+			</script>
+		</body>
+	</html>
+	
